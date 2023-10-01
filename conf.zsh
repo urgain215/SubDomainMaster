@@ -18,7 +18,7 @@ export findomain_securitytrails_token='SEhV4gYMjpIqH5LI86Os6cdgi4n7-GLB'
 
 export findomain_spyse_token='#'
 
-#GitHub SubDomain Token SETTINGS
+#GitHub SubDomain Token SETTING
 
 github_token="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"
 

@@ -20,12 +20,12 @@ export findomain_spyse_token='#'
 
 #GitHub SubDomain Token SETTING
 
-github_token="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"
+github_token="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"
 
 #Setup Dir
 
-root_dir="/root/HuntTheBug"
-hunt_dir="/root/HuntTheBug/SUB_HUNT"
+root_dir="$( pwd )"
+hunt_dir="$( pwd )/SUB_HUNT"
 
 mkdir -p "$hunt_dir/$target"
 target_dir="$hunt_dir/$target"

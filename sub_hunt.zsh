@@ -20,7 +20,7 @@ sub_enum(){
 #01 - AMASS
 
 amass_enum(){
-  amass enum  --passive -d $target -config $config_dir/amass-config.ini -o $subs_dir/amass.txt
+  amass enum  --passive -d $target -config $config_dir/amass-config.yaml -o $subs_dir/amass.txt
   ct=$(grep -c ".*" $subs_dir/amass.txt)
   mt="Amass : $ct"
   curl -s -X POST $telegram_url_msg -d chat_id=$telegram_id -d text="$mt"
@@ -35,8 +35,9 @@ subfinder_enum(){
   curl -s -X POST $telegram_url_msg -d chat_id=$telegram_id -d text="$mt"
 }
 
-#03 - SubLis3R
+#03 - Sublist3r
 
+#This tool is not working at all nowadays.
 sublist3r_enum(){
  sublist3r -v -d $target -o $subs_dir/sublist3r.txt
  sed -i 's/<BR>/\n/g' $subs_dir/sublist3r.txt
@@ -44,7 +45,7 @@ sublist3r_enum(){
  rm $subs_dir/sublist3r.txt
  mv $subs_dir/sublist3r-fl.txt $subs_dir/sublist3r.txt
  ct=$(grep -c ".*" $subs_dir/sublist3r.txt)
- mt="SubLis3R : $ct"
+ mt="Sublist3r : $ct"
  curl -s -X POST $telegram_url_msg -d chat_id=$telegram_id -d text="$mt"
 }
 
@@ -62,7 +63,7 @@ crobat_enum(){
 assetfinder_enum(){
  assetfinder -subs-only $target > $subs_dir/assetfinder.txt
  ct=$(grep -c ".*" $subs_dir/assetfinder.txt)
- mt="AsseFinder : $ct"
+ mt="AssetFinder : $ct"
  curl -s -X POST $telegram_url_msg -d chat_id=$telegram_id -d text="$mt"
 }
 
@@ -71,7 +72,7 @@ assetfinder_enum(){
 findomain_enum(){
  findomain -u $subs_dir/findomain.txt -t $target
  ct=$(grep -c ".*" $subs_dir/findomain.txt)
- mt="Find Domain : $ct"
+ mt="FindDomain : $ct"
  curl -s -X POST $telegram_url_msg -d chat_id=$telegram_id -d text="$mt"
 }
 
@@ -80,7 +81,7 @@ findomain_enum(){
 github-subdomains_enum(){
  github-subdomains -d $target -t $github_token -o $subs_dir/github-subdomains.txt -raw
  ct=$(grep -c ".*" $subs_dir/github-subdomains.txt)
- mt="GitHub SubDomain : $ct"
+ mt="GitHub SubDomains : $ct"
  curl -s -X POST $telegram_url_msg -d chat_id=$telegram_id -d text="$mt"
 }
 

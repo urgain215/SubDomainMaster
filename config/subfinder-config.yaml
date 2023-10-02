@@ -1,101 +1,106 @@
 resolvers:
-    - 1.1.1.1:53
-    - 1.0.0.1:53
-    - 8.8.8.8:53
-    - 8.8.4.4:53
-    - 9.9.9.9:53
-    - 9.9.9.10:53
-    - 77.88.8.8:53
-    - 77.88.8.1:53
-    - 208.67.222.222:53
-    - 208.67.220.220:53
+  - 1.1.1.1:53
+  - 1.0.0.1:53
+  - 8.8.8.8:53
+  - 8.8.4.4:53
+  - 9.9.9.9:53
+  - 9.9.9.10:53
+  - 77.88.8.8:53
+  - 77.88.8.1:53
+  - 208.67.222.222:53
+  - 208.67.220.220:53
 sources:
-    - alienvault
-    - anubis
-    - bufferover
-    - certspotter
-    - censys
-    - chaos
-    - chinaz
-    - crtsh
-    - dnsdumpster
-    - hackertarget
-    - intelx
-    - passivetotal
-    - robtex
-    - riddler
-    - securitytrails
-    - shodan
-    - spyse
-    - sublist3r
-    - threatcrowd
-    - threatminer
-    - virustotal
-    - fofa
+  - alienvault
+  - anubis
+  - bufferover
+  - certspotter
+  - censys
+  - chaos
+  - chinaz
+  - crtsh
+  - dnsdumpster
+  - hackertarget
+  - intelx
+  - passivetotal
+  - robtex
+  - riddler
+  - securitytrails
+  - shodan
+  - spyse
+  - sublist3r
+  - threatcrowd
+  - threatminer
+  - virustotal
+  - fofa
 all-sources:
-    - alienvault
-    - anubis
-    - archiveis
-    - binaryedge
-    - bufferover
-    - censys
-    - certspotter
-    - chaos
-    - commoncrawl
-    - crtsh
-    - dnsdumpster
-    - dnsdb
-    - github
-    - hackertarget
-    - intelx
-    - passivetotal
-    - rapiddns
-    - riddler
-    - recon
-    - robtex
-    - securitytrails
-    - shodan
-    - sitedossier
-    - sonarsearch
-    - spyse
-    - sublist3r
-    - threatbook
-    - threatcrowd
-    - threatminer
-    - virustotal
-    - waybackarchive
-    - zoomeye
-    - fofa
+  - alienvault
+  - anubis
+  - archiveis
+  - binaryedge
+  - bufferover
+  - censys
+  - certspotter
+  - chaos
+  - commoncrawl
+  - crtsh
+  - dnsdumpster
+  - dnsdb
+  - github
+  - hackertarget
+  - intelx
+  - passivetotal
+  - rapiddns
+  - riddler
+  - recon
+  - robtex
+  - securitytrails
+  - shodan
+  - sitedossier
+  - sonarsearch
+  - spyse
+  - sublist3r
+  - threatbook
+  - threatcrowd
+  - threatminer
+  - virustotal
+  - waybackarchive
+  - zoomeye
+  - fofa
 recursive:
-    - alienvault
-    - binaryedge
-    - bufferover
-    - certspotter
-    - crtsh
-    - dnsdumpster
-    - hackertarget
-    - passivetotal
-    - securitytrails
-    - sonarsearch
-    - sublist3r
-    - virustotal
-binaryedge: []
-censys: []
+  - alienvault
+  - binaryedge
+  - bufferover
+  - certspotter
+  - crtsh
+  - dnsdumpster
+  - hackertarget
+  - passivetotal
+  - securitytrails
+  - sonarsearch
+  - sublist3r
+  - virustotal
+binaryedge:
+  - f478d3b0-b8a8-49ee-a826-8c07d6ebdf12
+censys:
+  - 080e0116-18f6-49db-9f51-d3199d3f353e:XfqrRELadHOhxukLBx9OdVwAfyGLPBgK
 certspotter: []
 chaos: []
 chinaz: []
 dnsdb: []
-github: []
+github:
+  - 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
 intelx: []
 passivetotal: []
 recon: []
 robtex: []
 securitytrails: []
-shodan: []
+shodan:
+  - DIrAYOnehfaOQ3h5S4vyOHQA4AsWzp9t
 spyse: []
 threatbook: []
 urlscan: []
-virustotal: []
+virustotal:
+  - 3c828572f2cf1b1a0e20fbca5f160faa488ba7eea2e33b76977679341b1786ac
 zoomeye: []
 fofa: []
 subfinder-version: ""

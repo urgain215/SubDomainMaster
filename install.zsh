@@ -6,7 +6,7 @@ mkdir -p /root/tools
 
 #sudo timedatectl set-timezone Asia/Kolkata
 
-apt update && apt full-upgrade -y
+#apt update && apt full-upgrade -y
 
 apt install -y zsh curl wget command-not-found git htop ncdu glances exa zsh-autosuggestions zsh-syntax-highlighting python-is-python3 python3-pip parallel at tree cron golang-go
 

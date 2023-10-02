@@ -79,23 +79,28 @@ recursive:
     - sonarsearch
     - sublist3r
     - virustotal
-binaryedge: []
-censys: []
+binaryedge: 
+    - f478d3b0-b8a8-49ee-a826-8c07d6ebdf12
+censys:
+    - 080e0116-18f6-49db-9f51-d3199d3f353e:XfqrRELadHOhxukLBx9OdVwAfyGLPBgK
 certspotter: []
 chaos: []
 chinaz: []
 dnsdb: []
-github: []
+github:
+    - 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
 intelx: []
 passivetotal: []
 recon: []
 robtex: []
 securitytrails: []
-shodan: []
+shodan:
+    - DIrAYOnehfaOQ3h5S4vyOHQA4AsWzp9t
 spyse: []
 threatbook: []
 urlscan: []
-virustotal: []
+virustotal:
+    - 3c828572f2cf1b1a0e20fbca5f160faa488ba7eea2e33b76977679341b1786ac
 zoomeye: []
 fofa: []
 subfinder-version: ""

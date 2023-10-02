@@ -88,7 +88,7 @@ github-subdomains_enum(){
 #8 - Subscraper
 
 subscraper_enum(){
- subscraper $target -o $subs_dir/subscraper.txt
+ subscraper -d $target -o $subs_dir/subscraper.txt
  ct=$(grep -c ".*" $subs_dir/subscraper.txt)
  mt="Subscraper : $ct"
  curl -s -X POST $telegram_url_msg -d chat_id=$telegram_id -d text="$mt" 

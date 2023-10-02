@@ -31,14 +31,15 @@
 #resolver = 64.6.65.6 ; Verisign Secondary
 #resolver = 77.88.8.8 ; Yandex.DNS Secondary
 
-[scope]
+scope:
 # The network infrastructure settings expand scope, not restrict the scope.
 # Single IP address or range (e.g. a.b.c.10-245)
 #address = 192.168.1.1
 #cidr = 192.168.1.0/24
 #asn = 26808
-port = 80
-port = 443
+    port: 
+        - 80
+        - 443
 #port = 8080
 #port = 8443
 
@@ -94,9 +95,9 @@ port = 443
 #wordlist_file = /usr/share/wordlists/all.txt
 #wordlist_file = /usr/share/wordlists/all.txt
 
-[data_sources]
+data_sources:
 # When set, this time-to-live is the minimum value applied to all data source caching.
-minimum_ttl = 1440 ; One day
+    minimum_ttl: 1440 #One day
 
 # Are there any data sources that should be disabled?
 #[data_sources.disabled]
@@ -127,9 +128,9 @@ minimum_ttl = 1440 ; One day
 #apikey =
 
 # https://otx.alienvault.com (Free)
-[data_sources.AlienVault]
-[data_sources.AlienVault.Credentials]
-apikey = "aff64d94734f4292e318e5bfc44e9d9437f067814532879e9ebc39f085956197"
+    AlienVault:
+        Credentials:
+            apikey: aff64d94734f4292e318e5bfc44e9d9437f067814532879e9ebc39f085956197
 
 # https://app.binaryedge.com (Paid/Free-trial)
 #[data_sources.BinaryEdge]
@@ -212,10 +213,10 @@ apikey = "aff64d94734f4292e318e5bfc44e9d9437f067814532879e9ebc39f085956197"
 #apikey =
 
 # https://github.com (Free)
-[data_sources.GitHub]
-ttl = 4320
-[data_sources.GitHub.accountname]
-apikey = "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"
+    GitHub:
+        ttl: 4320
+        accountname:
+            apikey: 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
 
 # https://gitlab.com (Freemium)
 #[data_sources.GitLab]
@@ -340,10 +341,10 @@ apikey = "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"
 #apikey =
 
 # https://virustotal.com (Paid/Free-trial)
-[data_sources.VirusTotal]
-ttl = 10080
-[data_sources.VirusTotal.Credentials]
-apikey = "3c828572f2cf1b1a0e20fbca5f160faa488ba7eea2e33b76977679341b1786ac"
+    VirusTotal:
+        ttl: 10080
+        Credentials:
+            apikey: 3c828572f2cf1b1a0e20fbca5f160faa488ba7eea2e33b76977679341b1786ac
 
 # https://whoisxmlapi.com (Paid/Free-trial)
 #[data_sources.WhoisXMLAPI]

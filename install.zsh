@@ -8,7 +8,7 @@ mkdir -p /root/tools
 
 #apt update && apt full-upgrade -y
 
-apt install -y zsh curl wget command-not-found git htop ncdu glances exa zsh-autosuggestions zsh-syntax-highlighting python-is-python3 python3-pip parallel at tree cron golang-go
+apt install -y zsh curl wget command-not-found git htop ncdu cargo glances exa zsh-autosuggestions zsh-syntax-highlighting python-is-python3 python3-pip parallel at tree cron golang-go
 
 chsh -s $(which zsh)
 
@@ -47,16 +47,19 @@ rm -rf Gf-Patterns
 
 ## Findomain
 
-cd /root/
-wget https://github.com/findomain/findomain/releases/latest/download/findomain-linux
-chmod +x findomain-linux
-mv findomain-linux findomain
-mv findomain /usr/bin
+# cd /root/tools
+# git clone https://github.com/findomain/findomain.git
+# cd findomain
+# cargo build --release
+# sudo cp target/release/findomain /usr/bin
+docker pull edu4rdshl/findomain:latest
+docker run -it edu4rdshl/findomain:latest /bin/bash
 
 ## SubScraper
 
 git clone https://github.com/m8r0wn/subscraper
 cd subscraper
+pip3 install -r requirements.txt
 python3 setup.py install
 cd ..
 rm -rf subscraper

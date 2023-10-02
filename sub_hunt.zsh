@@ -37,6 +37,7 @@ subfinder_enum(){
 
 #03 - Sublist3r
 
+#This tool is not working at all nowadays.
 sublist3r_enum(){
  sublist3r -v -d $target -o $subs_dir/sublist3r.txt
  sed -i 's/<BR>/\n/g' $subs_dir/sublist3r.txt

@@ -110,4 +110,6 @@ nano ~/SubDomainMaster/conf.zsh
 
 zsh curl wget command-not-found git zsh-autosuggestions zsh-syntax-highlighting python-is-python3 python3-pip parallel at tree cron golang-go amass subfinder sublist3r ffuf dirsearch
 
-THANK YOU FOR USING THIS TOOL 
+
+
+THANK YOU FOR USING THIS TOOL

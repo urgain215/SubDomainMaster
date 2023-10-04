@@ -55,7 +55,7 @@ If You Are Bug Bounty Hunter User This App For
 > Sub Domain Takeover Check WIth > SubJack + Nuclei
 ```
 
-## Credits Tools USED in 'HuntTheBug Tool' 
+## Credits Tools USED in 'SubDomainMaster Tool' 
 
 1. knockknock - https://github.com/harleo/knockknock
 2. httpx - https://github.com/projectdiscovery/httpx/cmd/httpx

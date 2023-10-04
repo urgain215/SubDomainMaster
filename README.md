@@ -74,11 +74,3 @@ If You Are Bug Bounty Hunter User This App For
 
 
 ### Other Open Source Tools From Kali APT
-
-
-
-
-
-
-Tools are installed in /root/tools folder.
-Config files are stored in directory is $(pwd)/config

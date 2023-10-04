@@ -20,7 +20,6 @@ apt install -y amass subfinder ffuf dirsearch naabu figlet
 
 ## Go Tools
 
-go install -v github.com/harleo/knockknock@latest
 go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 go install -v github.com/cgboal/sonarsearch/cmd/crobat@latest
 go install -v github.com/tomnomnom/assetfinder@latest

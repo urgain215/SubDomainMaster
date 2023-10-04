@@ -44,7 +44,7 @@ nano ~/SubDomainMaster/config/subfinder-config.yaml
 
 ```
 
-1. Config Telegram Boat + Find Domain + Github Token in conf.zsh
+1. Config Telegram Boat + FindDomain + Github Token in conf.zsh
 
 How To Config Telegram Boat >
 
@@ -71,7 +71,7 @@ nano ~/SubDomainMaster/conf.zsh
 1. sub_hunt.zsh
 
 ```
-> Find Subdomain From > Amass + SubFinder + SubLis3R + Crobat + AsseFinder + Find Domain + GitHub SubDomain + Subscraper
+> Find Subdomain From > Amass + SubFinder + SubLis3R + Crobat + AssetFinder + FindDomain + GitHub SubDomain + Subscraper
 ```
 
 ```

@@ -20,7 +20,7 @@ sub_enum(){
 #01 - AMASS
 
 amass_enum(){
-  amass enum  --passive -d $target -config $config_dir/amass-config.yaml -o $subs_dir/amass.txt
+  amass enum  --passive -d $target -timeout 10 -config $config_dir/amass-config.yaml -o $subs_dir/amass.txt
   ct=$(grep -c ".*" $subs_dir/amass.txt)
   mt="Amass : $ct"
   curl -s -X POST $telegram_url_msg -d chat_id=$telegram_id -d text="$mt"

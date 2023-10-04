@@ -58,7 +58,7 @@ crobat_enum(){
  curl -s -X POST $telegram_url_msg -d chat_id=$telegram_id -d text="$mt"
 }
 
-#5 - AsseFinder
+#5 - AssetFinder
 
 assetfinder_enum(){
  assetfinder -subs-only $target > $subs_dir/assetfinder.txt
@@ -67,7 +67,7 @@ assetfinder_enum(){
  curl -s -X POST $telegram_url_msg -d chat_id=$telegram_id -d text="$mt"
 }
 
-#6 - Find Domain
+#6 - FindDomain
 
 findomain_enum(){
  findomain -u $subs_dir/findomain.txt -t $target
@@ -134,7 +134,7 @@ mix_subs
 
 live_domain(){
 
- httpx -l $subs_dir/final.txt  -nc -sc -td -server -title -ip -cdn -vhost -o $live_dir/httpx.txt
+ httpx -l $subs_dir/final.txt -sc -td -server -title -ip -cdn -vhost -o $live_dir/httpx.txt
 
  httpx_host=$(grep -c ".*" $live_dir/httpx.txt)
  msg_httpx_host="HTTPX : $httpx_host"

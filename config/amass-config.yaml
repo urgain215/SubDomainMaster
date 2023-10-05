@@ -131,13 +131,13 @@ data_sources:
   # https://otx.alienvault.com (Free)
   AlienVault:
     Credentials:
-      apikey: aff64d94734f4292e318e5bfc44e9d9437f067814532879e9ebc39f085956197
+      apikey: a
 
   # https://app.binaryedge.com (Paid/Free-trial)
   BinaryEdge:
     ttl: 10080
     Credentials:
-      apikey: f478d3b0-b8a8-49ee-a826-8c07d6ebdf12
+      apikey: 
 
   # https://builtwith.com (Paid/Free-trial)
   #[data_sources.BuiltWith]
@@ -157,8 +157,8 @@ data_sources:
   Censys:
     ttl: 10080
     Credentials:
-      apikey: 080e0116-18f6-49db-9f51-d3199d3f353e
-      secret: XfqrRELadHOhxukLBx9OdVwAfyGLPBgK
+      apikey:
+      secret:
 
   # https://chaos.projectdiscovery.io (Invite-Only)
   #[data_sources.Chaos]
@@ -217,7 +217,7 @@ data_sources:
   GitHub:
     ttl: 4320
     accountname:
-      apikey: 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
+      apikey:
 
   # https://gitlab.com (Freemium)
   #[data_sources.GitLab]
@@ -299,7 +299,7 @@ data_sources:
   Shodan:
     ttl: 10080
     Credentials:
-      apikey: Ue8uQdOw3vSIhB7IdRpIEmvUbCImzVWa
+      apikey:
 
   # https://spamhaus.com (Free)
   #[data_sources.Spamhaus]
@@ -345,7 +345,7 @@ data_sources:
   VirusTotal:
     ttl: 10080
     Credentials:
-      apikey: config.SECRET_KEY
+      apikey:
 # https://whoisxmlapi.com (Paid/Free-trial)
 #[data_sources.WhoisXMLAPI]
 #[data_sources.WhoisXMLAPI.Credentials]

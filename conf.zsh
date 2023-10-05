@@ -49,6 +49,6 @@ ports_dir="$target_dir/ports"
 ###
 
 wordlist_dir="$root_dir/wordlist"
-config_dir="$root_dir/config"
+config_dir="$root_dir/config_real"  #Change the name of conifguration file
 wordlist="$wordlist_dir/all.txt"
 resolver="$wordlist_dir/nameservers.txt"

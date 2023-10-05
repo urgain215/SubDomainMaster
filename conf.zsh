@@ -1,26 +1,28 @@
 #!/bin/zsh
 
+source setenv.zsh
+
 target=$1
 
 #Telegram Bot Config
-telegram_token="6274369772:AAF1ErqIu-Sa9-Buit2ttVVSuYDO7eBejgI"
-telegram_id="-1001795532551"
+telegram_token=${telegram_token}
+telegram_id=${telegram_id}
 telegram_url="https://api.telegram.org/bot$telegram_token/sendDocument?chat_id=$telegram_id"
 telegram_url_msg="https://api.telegram.org/bot$telegram_token/sendMessage"
 
 #FindDomain Config SETTINGS
 
-export findomain_virustotal_token='3c828572f2cf1b1a0e20fbca5f160faa488ba7eea2e33b76977679341b1786ac'
+export findomain_virustotal_token=${virustotal_SECRET_KEY}
 
 export findomain_fb_token='#'
 
-export findomain_securitytrails_token='SEhV4gYMjpIqH5LI86Os6cdgi4n7-GLB'
+export findomain_securitytrails_token=${findomain_securitytrails_token}
 
 export findomain_spyse_token='#'
 
 #GitHub SubDomain Token SETTING
 
-github_token="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"
+github_token=${github_token}
 
 #Setup Dir
 

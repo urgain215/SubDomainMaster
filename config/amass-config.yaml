@@ -30,7 +30,8 @@
 #resolver = 8.8.4.4 ; Google Secondary
 #resolver = 64.6.65.6 ; Verisign Secondary
 #resolver = 77.88.8.8 ; Yandex.DNS Secondary
-
+#source:
+#  - /home/urgain/Project/SubDomainMaster/setenv.zsh
 scope:
   # The network infrastructure settings expand scope, not restrict the scope.
   # Single IP address or range (e.g. a.b.c.10-245)
@@ -344,7 +345,7 @@ data_sources:
   VirusTotal:
     ttl: 10080
     Credentials:
-      apikey: 3c828572f2cf1b1a0e20fbca5f160faa488ba7eea2e33b76977679341b1786ac
+      apikey: config.SECRET_KEY
 # https://whoisxmlapi.com (Paid/Free-trial)
 #[data_sources.WhoisXMLAPI]
 #[data_sources.WhoisXMLAPI.Credentials]

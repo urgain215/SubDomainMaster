@@ -20,8 +20,8 @@ sub_enum(){
 #01 - AMASS
 
 amass_enum(){
-  amass enum  --passive -d $target -timeout 10 -config $config_dir/amass-config.yaml -o $subs_dir/full_amass.txt
-  sed 's/\x1B\[[0-9;]*m//g' $subs_dir/full_amass.txt | grep -E -o '([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}' | awk '!seen[$0]++' > $subs_dir/amass.txt
+  amass enum  --passive -d $target -timeout 10 -config $config_dir/amass-config.yaml -o $target_dir/full_amass.txt
+  sed 's/\x1B\[[0-9;]*m//g' $target_dir/full_amass.txt | grep -E -o '([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}' | awk '!seen[$0]++' > $subs_dir/amass.txt
   ct=$(grep -c ".*" $subs_dir/amass.txt)
   mt="Amass : $ct"
   curl -s -X POST $telegram_url_msg -d chat_id=$telegram_id -d text="$mt"
@@ -150,17 +150,19 @@ live_domain(){
  httprobe=$(grep -c ".*" $live_dir/httprobe.txt)
  msg_httprobe_host="HTTPROBE : $httpx_host"
  curl -s -X POST $telegram_url_msg -d chat_id=$telegram_id -d text="$msg_httprobe_host"
-
+ echo ""
  sort -u $live_dir/live_host.txt $live_dir/httprobe.txt > $live_dir/live-host.txt
 
  awk '{print tolower($0)}' $live_dir/live-host.txt > $live_dir/live-host-1.txt
 
  sort -u $live_dir/live-host-1.txt > $live_dir/live-host.txt
-
- cat $live_dir/live-host.txt | hakcheckurl | sort -u > $live_dir/live-with-status-code.txt
-
- cat $live_dir/live-host.txt | hakcheckurl | grep 403 > $live_dir/403-url.txt
- cat $live_dir/live-host.txt | hakcheckurl | grep 200 > $live_dir/200-url.txt
+ 
+ echo "Hakcheckurl Scan in Progress...\n"
+ cat $live_dir/live-host.txt | hakcheckurl > $live_dir/hakcheckurl_output.txt
+ 
+ cat $live_dir/hakcheckurl_output.txt | sort -u > $live_dir/live-with-status-code.txt
+ cat $live_dir/hakcheckurl_output.txt | grep 403 > $live_dir/403-url.txt
+ cat $live_dir/hakcheckurl_output.txt | grep 200 > $live_dir/200-url.txt
 
  rm $live_dir/live-host-1.txt
 
@@ -189,8 +191,8 @@ curl -s -X POST $telegram_url_msg -d chat_id=$telegram_id -d text="Subdomain Hun
 
 #Functions Start
 
-start_message
-sub_enum
+#start_message
+#sub_enum
 live_domain
 recon_complete
 

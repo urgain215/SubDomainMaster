@@ -51,8 +51,17 @@ rm -rf Gf-Patterns
 # cd findomain
 # cargo build --release
 # sudo cp target/release/findomain /usr/bin
-docker pull edu4rdshl/findomain:latest
-docker run -it edu4rdshl/findomain:latest /bin/bash
+### For aarch platform.
+
+if command -v findomain &> /dev/null; then
+    echo "findomain is already installed. Skipping installation."
+else
+    curl -LO https://github.com/findomain/findomain/releases/latest/download/findomain-aarch64.zip
+    unzip findomain-aarch64.zip
+    chmod +x findomain
+    sudo mv findomain /usr/bin/findomain
+    rm -rf findomain-aarch64.zip
+fi
 
 ## SubScraper
 

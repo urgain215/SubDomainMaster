@@ -191,8 +191,8 @@ curl -s -X POST $telegram_url_msg -d chat_id=$telegram_id -d text="Subdomain Hun
 
 #Functions Start
 
-#start_message
-#sub_enum
+start_message
+sub_enum
 live_domain
 recon_complete
 

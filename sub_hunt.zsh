@@ -21,7 +21,7 @@ sub_enum(){
 
 amass_enum(){
   amass enum  --passive -d $target -timeout 10 -config $config_dir/amass-config.yaml -o $subs_dir/full_amass.txt
-  sed 's/\x1B\[[0-9;]*m//g' $subs_dir/full_amass.txt | grep -E -o '([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}' | awk '!seen[$0]++' > amass.txt
+  sed 's/\x1B\[[0-9;]*m//g' $subs_dir/full_amass.txt | grep -E -o '([a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}' | awk '!seen[$0]++' > $subs_dir/amass.txt
   ct=$(grep -c ".*" $subs_dir/amass.txt)
   mt="Amass : $ct"
   curl -s -X POST $telegram_url_msg -d chat_id=$telegram_id -d text="$mt"

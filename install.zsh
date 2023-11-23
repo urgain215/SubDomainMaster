@@ -64,6 +64,22 @@ cd ..
 rm -rf subscraper
 
 
+## ParamSpider
+
+cd /root/tools
+git clone https://github.com/devanshbatham/ParamSpider
+cd ParamSpider
+pip3 install -r requirements.txt
+
+
+## JSFINDER + LinkFinder
+
+cd /root/tools
+git clone https://github.com/Threezh1/JSFinder.git
+git clone https://github.com/GerbenJavado/LinkFinder.git
+python3 setup.py install
+
+
 ## SecretFinder
 
 cd /root/tools

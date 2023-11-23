@@ -27,7 +27,7 @@ go install -v github.com/gwen001/github-subdomains@latest
 go install -v github.com/tomnomnom/httprobe@latest
 go install -v github.com/hakluke/hakcheckurl@latest
 go install -v github.com/haccer/subjack@latest
-go install -v github.com/projectdiscovery/nuclei/v2/cmd/nuclei@latest
+go install -v github.com/projectdiscovery/nuclei/v3/cmd/nuclei@latest
 go install -v github.com/tomnomnom/waybackurls@latest
 go install -v github.com/lc/gau/v2/cmd/gau@latest
 go install -v github.com/hakluke/hakrawler@latest

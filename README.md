@@ -44,7 +44,7 @@ nano ~/SubDomainMaster/config/subfinder-config.yaml
 
 ```
 
-1. Config Telegram Bot + FindDomain + Github Token in conf.zsh
+2. Config Telegram Bot + FindDomain + Github Token in conf.zsh
 
 How To Config Telegram Bot >
 
@@ -59,6 +59,8 @@ How to Get GitHub Token >
 nano ~/SubDomainMaster/conf.zsh
 
 ```
+
+3. Change the name of config file in conf.zsh
 
 ## How To Use >
 
@@ -110,5 +112,17 @@ nano ~/SubDomainMaster/conf.zsh
 
 zsh curl wget command-not-found git zsh-autosuggestions zsh-syntax-highlighting python-is-python3 python3-pip parallel at tree cron golang-go amass subfinder sublist3r ffuf dirsearch
 
+
+### Credits
+
+Thanks to all the amazing [community contributors for sending PRs](https://github.com/urgain215/SubDomainMaster/graphs/contributors) and keeping this project updated. :heart:
+
+If you have an idea or some kind of improvement, you are welcome to contribute and participate in the Project, feel free to send your PR.
+
+<p align="center">
+<a href="https://github.com/urgain215/SubDomainMaster/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=urgain215/SubDomainMaster&max=500">
+</a>
+</p>
 <br>
 THANK YOU FOR USING THIS TOOL

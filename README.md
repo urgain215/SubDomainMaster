@@ -5,6 +5,8 @@ Basic command line tool "SubDomainMaster" is Basic Script For Sub Domain Enumera
 Installation Process >
 
 Note : This tool is Tested On **Kali Linux**. You Must Install As `Root User`.
+System Requiremet > **2 Core CPU + 4 GB RAM**
+
 
 ## Installation  Process
 
@@ -112,7 +114,58 @@ nano ~/SubDomainMaster/conf.zsh
 ```
 > Directory Fuzzing With - Dirsearch
 ```
+5. port_hunt.zsh
 
+```
+> Find  All Open Ports With > Naabu
+```
+## Recon Flow For Small Scope [ dom_hunt.zsh ]
+
+```
+> Grab All URL From GAU + WayBackURLS > Clean URL > Check Live URL
+```
+
+```
+> Find Secretes With > GF Tool
+```
+
+```
+> URLParameter With > ParamSpider
+```
+
+```
+> Greb All JS And Check Live
+```
+
+```
+> Find URL - SUB - VAR in JS With JSFinder + jsvar.sh
+```
+
+```
+> Find Secrets From JS Files with > SecretFinder
+```
+
+```
+> Directory Brute Forsing With > Dirsearch
+```
+
+```
+> Check All Known Valn With Nuclei
+```
+
+## Recon Flow For Org Reverse Whois [ org_hunt.zsh ]
+
+```
+> Grab All Reverse Domains With > knockknock
+```
+
+```
+> Check Live Domains With > HTTPX
+```
+
+```
+> Get Domain IP Info With > ipinfo
+```
 ## Credits Tools USED in 'SubDomainMaster Tool' 
 
 1. Amass - https://github.com/owasp-amass/amass

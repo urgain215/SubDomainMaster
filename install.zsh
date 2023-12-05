@@ -33,6 +33,7 @@ go install -v github.com/lc/gau/v2/cmd/gau@latest
 go install -v github.com/hakluke/hakrawler@latest
 go install -v github.com/tomnomnom/qsreplace@latest
 go install -v github.com/ipinfo/cli/ipinfo@latest
+go install -v github.com/harleo/knockknock@latest
 
 # GF
 
@@ -100,13 +101,6 @@ cd /root/tools
 git clone https://github.com/m4ll0k/SecretFinder
 cd SecretFinder
 pip install -r requirements.txt
-
-## Dirsearch
-
-cd /root/tools
-git clone https://github.com/maurosoria/dirsearch.git
-cd dirsearch
-pip3 install -r requirements.txt
 
 ## Byp4xx
 

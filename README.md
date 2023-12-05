@@ -85,7 +85,33 @@ nano ~/SubDomainMaster/conf.zsh
 ``` 
 
 2. sub_jack.zsh
+```
+> Sub Domain Takeover Check WIth > SubJack + Nuclei
+```
 
+3. url_hunt.zsh
+
+```
+> Grab URLs From GAU + WaybackURLS
+```
+
+```
+> Check Live URLS With FFUF
+```
+
+```
+> Grab All URL WITH PERA-METER With ParamSpider
+```
+
+```
+> Javascript Hunting Grab All JS File And Find Secret With > SecretFinder + JSFinder
+```
+
+4. dir_hunt.zsh
+
+```
+> Directory Fuzzing With - Dirsearch
+```
 
 ## Credits Tools USED in 'SubDomainMaster Tool' 
 
@@ -106,6 +132,7 @@ nano ~/SubDomainMaster/conf.zsh
 15. hakrawler - https://github.com/hakluke/hakrawler
 16. qsreplace - https://github.com/tomnomnom/qsreplace
 17. ipinfo - https://github.com/ipinfo/cli/ipinfo
+18. dirsearch - https://github.com/maurosoria/dirsearch
 
 
 ### Other Open Source Tools From Kali APT

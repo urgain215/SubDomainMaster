@@ -12,4 +12,6 @@ echo "\n ===> Recon Start For $target \n"
 
 ./url_hunt.zsh $target
 
+./dir_hunt.zsh $target
+
 echo "\n ===> Recon Complete For $target \n"

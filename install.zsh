@@ -72,7 +72,11 @@ python3 setup.py install
 cd ..
 rm -rf subscraper
 
-
+##Dirsearch
+cd /root/tools
+git clone https://github.com/maurosoria/dirsearch.git --depth 1
+cd dirsearch
+pip3 install -r requirements.txt
 ## ParamSpider
 
 cd /root/tools

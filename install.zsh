@@ -100,6 +100,26 @@ git clone https://github.com/m4ll0k/SecretFinder
 cd SecretFinder
 pip install -r requirements.txt
 
+## Byp4xx
+
+cd /root/tools
+git clone https://github.com/lobuhi/byp4xx.git
+cd byp4xx
+chmod u+x byp4xx.py
+
+## Bypass 403
+
+cd /root/tools
+git clone https://github.com/iamj0ker/bypass-403
+cd bypass-403
+chmod +x bypass-403.sh
+
+## 403bypasser
+
+cd /root/tools
+git clone https://github.com/yunemse48/403bypasser
+cd 403bypasser
+pip install -r requirements.txt
 
 cd ~
 

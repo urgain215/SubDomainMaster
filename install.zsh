@@ -16,7 +16,7 @@ export PATH=$PATH:/root/go/bin
 
 #Tools Install Start
 
-apt install -y amass subfinder ffuf dirsearch naabu figlet
+apt install -y amass subfinder ffuf naabu figlet
 
 ## Go Tools
 

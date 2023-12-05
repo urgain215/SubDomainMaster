@@ -13,7 +13,7 @@ curl -s -X POST $telegram_url_msg -d chat_id=$telegram_id -d text="DIR Bruteforc
 
 #---->
 
-python3 /root/tools/dirsearch/dirsearch.py -l $target_dir/live/live-host.txt -i 200,201,202,203,204,301,302,303,304 -w $root_dir/wordlist/8000-directory-list.txt -o $dirs_dir/dir-search.html --format=html
+python3 /root/tools/dirsearch/dirsearch.py -l $target_dir/live/live-host.txt -i 200,201,202,203,204,301,302,303,304 -w $root_dir/wordlist/8000-directory-list.txt -o $dirs_dir/dir-search.html --format=html -o $dirs_dir/dir-search.txt --format=plain
 
  c_200_host=$(grep -c ".*" $dirs_dir/dir-search.html)
  msg_200_host="Dir BruteForce Complete  $target And We Found : $c_200_host"

@@ -77,6 +77,7 @@ cd /root/tools
 git clone https://github.com/maurosoria/dirsearch.git --depth 1
 cd dirsearch
 pip3 install -r requirements.txt
+
 ## ParamSpider
 
 cd /root/tools
@@ -99,6 +100,13 @@ cd /root/tools
 git clone https://github.com/m4ll0k/SecretFinder
 cd SecretFinder
 pip install -r requirements.txt
+
+## Dirsearch
+
+cd /root/tools
+git clone https://github.com/maurosoria/dirsearch.git
+cd dirsearch
+pip3 install -r requirements.txt
 
 ## Byp4xx
 

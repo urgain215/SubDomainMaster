@@ -1,6 +1,6 @@
 # SubDomainMaster
 
-Basic command line tool "SubDomainMaster" is Basic Script For Sub Domain Enumeration -> Live Domain Enumeration -> Sub Domain Hijack With added functionality of Telegram Bot Notification.
+Basic Recon For Bug Bounty Hunter - "SubDomainMaster" is Basic Scripts For Sub Domain Enumeration> Live Domain Enumeration > Sub Domain Hijack > URL + JavaScript Scan > Dir Brute Forcing > Open Port Check > 403 bypass With added Telegram Bot Notification
 
 Installation Process >
 

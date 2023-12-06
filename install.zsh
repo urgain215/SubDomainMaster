@@ -82,7 +82,7 @@ pip3 install -r requirements.txt
 ## ParamSpider
 
 cd /root/tools
-git clone https://github.com/devanshbatham/ParamSpider
+git clone https://github.com/0xKayala/ParamSpider
 cd ParamSpider
 pip3 install -r requirements.txt
 

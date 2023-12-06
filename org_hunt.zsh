@@ -13,7 +13,7 @@ echo '\n'
 
 org_name=$(whois $org.com | grep 'Registrant Organization:' | cut -d: -f2-)
 
-knockknock -n $org_name -p
+orgScan -n $org_name -p
 
 mv domains.txt $( pwd )/ORG_HUNT/$org/$org.txt
 

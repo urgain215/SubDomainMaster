@@ -14,4 +14,6 @@ echo "\n ===> Recon Start For $target \n"
 
 ./dir_hunt.zsh $target
 
+./port_hunt.zsh $target
+
 echo "\n ===> Recon Complete For $target \n"

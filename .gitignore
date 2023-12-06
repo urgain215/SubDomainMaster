@@ -5,3 +5,5 @@ config_real
 reports
 ORG_HUNT
 DOM_HUNT
+domains.txt
+svnit.txt

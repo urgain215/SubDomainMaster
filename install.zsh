@@ -34,6 +34,7 @@ go install -v github.com/hakluke/hakrawler@latest
 go install -v github.com/tomnomnom/qsreplace@latest
 go install -v github.com/ipinfo/cli/ipinfo@latest
 go install -v github.com/urgain215/orgScan@latest
+go install -v github.com/lobuhi/byp4xx@latest
 
 # GF
 
@@ -104,9 +105,9 @@ pip install -r requirements.txt
 
 ## Byp4xx
 
-cd /root/tools
-git clone https://github.com/lobuhi/byp4xx.git
-cd byp4xx
+# cd /root/tools
+# git clone https://github.com/lobuhi/byp4xx.git
+# cd byp4xx
 
 ## Bypass 403
 

@@ -4,7 +4,8 @@ target=$1
 
 root_dir="$( pwd )/"
 
-python3 /root/tools/byp4xx/byp4xx.py $target
+byp4xx http://$target
+byp4xx https://$target
 
 python3  /root/tools/403bypasser/403bypasser.py -u $target -d /
 
